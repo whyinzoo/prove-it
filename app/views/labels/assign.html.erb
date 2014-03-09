@@ -1,0 +1,9 @@
+<%= form_tag("update", method: "put") do %>
+  <%= label_tag(:label, "Labels:") %>
+  <%= select_tag(:label, @labels.html_safe) %><br/>
+
+  <%= label_tag(:case, "Cases:") %>
+  <%= select_tag(:case, @cases.html_safe) %><br/>
+
+  <%= submit_tag("Assign") %>
+<% end %>

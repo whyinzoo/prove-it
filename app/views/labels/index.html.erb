@@ -1,0 +1,17 @@
+<table>
+<tr>
+  <td>Name</td>
+  <td>Description</td>
+  <td>Types</td>
+  <td>Color</td>
+</tr>
+<% @labels.each do |label| %>
+  <tr>
+    <td><%= label['name'] %></td>
+    <td><%= label['description'] %></td>
+    <td><%= label['types'].join(', ') %></td>
+    <td><%= label['color'] %></td>
+  </tr>
+<% end %>
+</table> 
+

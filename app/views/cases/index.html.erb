@@ -1,0 +1,12 @@
+<table>
+<tr>
+  <td>Subject</td>
+  <td>Description</td>
+</tr>
+<% @cases.each do |c| %>
+<tr>
+  <td><%= c['subject'] %></td><td><%= c['description'] %></td>
+</tr>
+<% end %>
+</table> 
+

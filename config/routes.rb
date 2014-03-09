@@ -13,6 +13,9 @@ ProveIt::Application.routes.draw do
   match 'labels/assign'  => 'labels#assign'
   match 'labels/update'  => 'labels#update'
 
+  match '/', :to => "cases#index"
+  root :to => "cases#index"
+
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
