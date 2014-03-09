@@ -7,6 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<ul id="navbar">
+  <li><%= link_to_unless_current("Cases", { controller: "cases", action: "index" }) %></li>
+  <li><%= link_to_unless_current("Labels", { controller: "labels", action: "index" }) %></li>
+  <li><%= link_to_unless_current("Create Label", { controller: "labels", action: "new" }) %></li>
+  <li><%= link_to_unless_current("Assign Label", { controller: "labels", action: "assign" }) %></li>
+</ul>
+<div id="error"><%= flash[:error] %></div>
 
 <%= yield %>
 

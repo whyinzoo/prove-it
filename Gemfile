@@ -6,7 +6,7 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-
+gem 'oauth'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -35,4 +35,8 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
- gem 'debugger', :group => [:development]
+group :development, :test do
+  gem 'debugger' 
+  gem 'rspec-rails'
+end
+

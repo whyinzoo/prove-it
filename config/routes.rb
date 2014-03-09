@@ -5,6 +5,13 @@ ProveIt::Application.routes.draw do
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
+#  match 'desks/index'   => 'desks#index'
+  match 'cases/index'    => 'cases#index'
+  match 'labels/index'   => 'labels#index'
+  match 'labels/new'     => 'labels#new'
+  match 'labels/create'  => 'labels#create'
+  match 'labels/assign'  => 'labels#assign'
+  match 'labels/update'  => 'labels#update'
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
